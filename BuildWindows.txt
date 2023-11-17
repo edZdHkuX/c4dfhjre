@@ -1,0 +1,136 @@
+- キーボード英語配列設定
+	- 言語バーのオプション > テキストサービスと入力言語 > キーの詳細設定のシーケンスキーを削除する
+	- sharpkeysからcapsLockを左コントロールキーに変更
+- Windowsキーを無効化する設定方法 - Windows 11 / 10
+- ディスク分散
+	- https://www.billionwallet.com/windows10/userfolder-move.html
+- 不要サービスの停止
+	- https://docs.microsoft.com/ja-jp/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server
+- WSLインストール
+	- WSLでsystemdがbootできないときの対処法
+	- dockerインストール
+		- Ubuntu22.04へDockerとDocker Compose v2 をインストール
+		- WSL（Windows Subsystem for Linux）2（ubuntu）にDOCKERをインストール
+- vsc | vscode | "visual studio code"
+	- scoop neovim
+		- https://qiita.com/kishiro/items/b11a50dd287f503e56aa
+			- インストール後、neovim のパス環境を設定する
+	- PlantUML
+		- https://zenn.dev/m3ka24/articles/20220206-plantuml
+			- scoop bucket add java
+			- scoop install microsoft17-jdk
+		- https://qiita.com/couzie/items/9dedb834c5aff09ea7b2
+- よく使うソフト
+	- power shell preview
+	- windows terminal
+	- wsl
+		- zsh
+			- https://github.com/sorin-ionescu/prezto
+			- https://qiita.com/rikuto125/items/8adb8a48c8886a769d40
+			- https://qiita.com/gilly/items/5ff7bd7142e963cdbb9b
+		- Powerline fonts
+			- https://github.com/powerline/fonts
+		- https://qiita.com/t_serizawa/items/b9a5579a520a0cd86e96
+			- exa
+				- sudo apt install exa
+			- bat
+	- autohotkey
+	- mouseguesturel
+	- Microsoft Office
+		- https://www.microsoft-365.jp/2021/12/24/post-3617/
+	- deinput
+	- Clibor
+	- Glass2k
+	- Mactype
+	- いろんなソフト
+	- マウスオーバー翻訳
+		- https://github.com/kengo700/mouse_over_dictionary
+	- scoop
+		- Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+		- irm get.scoop.sh | iex
+		- scoop install git
+		- scoop bucket add extras
+```
+PS C:\Users\asw_user> scoop list
+Installed apps:
+
+Name                     Version       Source Updated             Info
+----                     -------       ------ -------             ----
+7zip                     22.01         main   2022-07-19 10:33:09
+adb                      34.0.1        main   2023-03-10 11:14:29
+cpu-z                    2.05          extras 2023-03-02 10:51:52
+crystaldiskinfo          8.17.14       extras 2023-02-03 12:39:24
+crystaldiskmark          8.0.4c        extras 2023-01-17 22:18:12
+dark                     3.11.2        main   2021-11-09 13:09:10
+DBeaver                  23.0.1        extras 2023-03-27 10:51:55
+dotnet-sdk               7.0.202       main   2023-03-16 11:51:07
+everything               1.4.1.1022    extras 2022-10-14 20:46:24
+geekuninstaller          1.5.1.162     extras 2022-10-14 20:47:04
+heidisql                 12.4          extras 2023-02-27 01:19:29
+hwmonitor                1.50          extras 2023-03-03 13:00:01
+inno-setup               6.2.2         extras 2023-02-16 11:05:39
+innounp                  0.50          main   2022-01-13 21:01:38
+ios-webkit-debug-proxy   1.8.8         extras 2021-08-13 13:58:06
+keyboard-chatter-blocker 1.16          extras 2023-03-16 11:51:14
+lessmsi                  1.10.0        main   2021-12-07 14:19:25
+lunacy                   9.0.8         extras 2023-03-22 12:11:29
+msys2                    2023-03-18    main   2023-03-20 10:23:04
+neovim                   0.8.3         main   2023-02-03 12:39:39
+nodejs                   19.8.1        main   2023-03-16 11:51:29
+nodejs-lts               18.15.0       main   2023-03-08 11:26:15
+python                   3.11.2        main   2023-02-09 11:12:25
+quicklook                3.7.3         extras 2022-11-24 22:32:32
+ruby                     3.2.2-1       main   2023-04-03 10:56:38
+sharpkeys                3.9.4         extras 2022-10-05 10:33:28
+vagrant                  2.3.4         main   2022-12-12 10:44:33
+vcredist2022             14.34.31931.0 extras 2022-11-10 11:26:36
+vlc                      3.0.18        extras 2022-11-30 15:25:48
+vncviewer                7.0.1         extras 2023-02-09 11:12:33
+vscode                   1.77.0        extras 2023-03-31 11:56:54
+winmerge                 2.16.28       extras 2023-02-15 11:52:45
+wiztree                  4.13          extras 2023-03-16 11:52:19
+
+PS C:\Users\asw_user>
+```
+- .NETランタイムはscoopじゃなく手動
+- プロポーショナル
+	- Noto
+	- BIZ UD
+- フォント
+	- Hackgen
+	- Nerdfont
+		- https://github.com/ryanoasis/nerd-fonts#option-7-unofficial-chocolatey-or-scoop-repositories
+			- scoop bucket add nerd-fonts
+			- scoop install Hack-NF
+	- 0xProto
+- Enable Long Path Support
+	- Fix Destination path too long error in Windows 10 / 11
+	- Enable Long Path Support via Group Policy Editor
+- DNS設定
+	- 1.1.1.2
+	- 1.0.0.2
+	- 8.8.8.8
+	- 8.8.4.4
+	- 2606:4700:4700::1112
+	- 2606:4700:4700::1002
+	- 2001:4860:4860::8888
+	- 2001:4860:4860::8844
+```
+1.1.1.2
+https://security.cloudflare-dns.com/dns-query
+
+94.140.14.14
+https://dns.adguard-dns.com/dns-query
+
+2606:4700:4700::1112
+https://security.cloudflare-dns.com/dns-query
+
+2a10:50c0::ad1:ff
+https://dns.adguard-dns.com/dns-query
+```
+- MTU設定
+- 
+
+	- ショートカットリンク作成
+		- %USERPROFILE%\AppData\Local\Microsoft\WindowsApps\pwsh.exe "D:\Users\asw_user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Hidden\scoop_update.ps1"
+		- C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy RemoteSigned -File  "C:\Users\mentholatum\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\scoop_update.ps1" 

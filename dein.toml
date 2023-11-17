@@ -1,0 +1,98 @@
+# Dark powered Vim/Neovim plugin manager
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# A light and configurable statusline/tabline plugin for Vim
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+# A simple, easy-to-use Vim alignment plugin
+[[plugins]]
+repo = 'junegunn/vim-easy-align'
+hook_add = '''
+    nmap ga <Plug>(EasyAlign)
+    xmap ga <Plug>(EasyAlign)
+'''
+
+# match-up is a plugin that lets you highlight, navigate, and operate on sets of matching text
+[[plugins]]
+repo = 'andymass/vim-matchup'
+hook_add = '''
+    let g:loaded_matchit = 1
+'''
+
+# quickly highlight <cword> or visually selected word
+[[plugins]]
+repo = 't9md/vim-quickhl'
+hook_add = '''
+    nmap <Space>m <Plug>(quickhl-manual-this)
+    nmap <Space>w <Plug>(quickhl-manual-this-whole-word)
+    nmap <Space>M <Plug>(quickhl-manual-reset)
+    nmap <Space>c <Plug>(quickhl-manual-clear)
+'''
+
+# This plugin causes all trailing whitespace characters to be highlighted
+[[plugins]]
+repo = 'ntpeters/vim-better-whitespace'
+hook_add = '''
+    let g:better_whitespace_enabled=1
+    let g:strip_whitespace_on_save=1
+'''
+
+# Indent Guides is a plugin for visually displaying indent levels in Vim
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+hook_add = '''
+    let g:indent_guides_enable_on_vim_startup = 1
+    let g:indent_guides_auto_colors = 0
+    set ts=2 sw=2 et
+    let g:indent_guides_start_level = 1
+    let g:indent_guides_guide_size = 2
+    hi IndentGuidesOdd  ctermbg=236
+    hi IndentGuidesEven ctermbg=237
+'''
+
+# This plugin will help you read these codes by showing different levels of parentheses in different colors
+[[plugins]]
+repo = 'luochen1990/rainbow'
+hook_add = '''
+    let g:rainbow_active = 1
+'''
+
+# Highlight columns in CSV and TSV files and run queries in SQL-like language
+[[plugins]] repo = 'mechatroner/rainbow_csv'
+
+# A Vim plugin which shows a git diff in the sign column
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+    let g:gitgutter_max_signs = -1
+    hi SignColumn                                      ctermbg=none
+    hi GitGutterAdd          cterm=BOLD ctermfg=blue   ctermbg=blue
+    hi GitGutterChange       cterm=BOLD ctermfg=green  ctermbg=green
+    hi GitGutterDelete       cterm=BOLD ctermfg=red    ctermbg=red
+    hi GitGutterChangeDelete cterm=BOLD ctermfg=yellow ctermbg=yellow
+    nmap ]h  <Plug>(GitGutterNextHunk)
+    nmap [h  <Plug>(GitGutterPrevHunk)
+    nmap ghs <Plug>(GitGutterStageHunk)
+    nmap ghu <Plug>(GitGutterUndoHunk)
+    nmap ghp <Plug>(GitGutterPreviewHunk)
+'''
+
+# Vim syntax for TOML.
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+# # precision colorscheme for the vim text editor http://ethanschoonover.com/solarized
+# [[plugins]]
+# repo = 'altercation/vim-colors-solarized'
+# hook_add = '''
+#     set background=dark
+#     let g:solarized_termtrans = 1
+#     " let g:solarized_degrade = 1
+#     " let g:solarized_visibility = "high"
+#     " let g:solarized_contrast = "high"
+#     " let g:solarized_termcolors = 16
+#     au MyAutoCmd VimEnter * nested colorscheme solarized
+# '''
