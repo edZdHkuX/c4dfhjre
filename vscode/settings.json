@@ -1,0 +1,112 @@
+{
+    "editor.scrollBeyondLastLine": false,
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "[ruby]": {
+        "editor.defaultFormatter": "misogi.ruby-rubocop"
+    },
+    "rubyLsp.rubyVersionManager": "rbenv",
+    "vscode-neovim.neovimExecutablePaths.linux": "/snap/bin/nvim",
+    "vscode-neovim.useWSL": true,
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/mentholatum/.config/nvim/init.lua",
+    "ruby.intellisense": "rubyLocate",
+    "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+    "editor.fontFamily": "'Hack Nerd Font', Consolas, 'Courier New', monospace",
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "Dracula Theme",
+    "workbench.colorCustomizations": {
+      "editor.lineHighlightBackground": "#44475a",
+      "editor.lineHighlightBorder": "#bd93f9",
+    }
+    // Using the light mode
+    "indentRainbow.indicatorStyle": "light",
+    // Defining custom colors instead of default "Rainbow" for dark backgrounds.
+    "indentRainbow.colors": [
+        "rgba(0, 0, 0, 0)",
+        "rgba(139, 233, 253, 0.5)",
+        "rgba( 80, 250, 123, 0.5)",
+        "rgba(255, 184, 108, 0.5)",
+        "rgba(255, 121, 198, 0.5)",
+        "rgba(189, 147, 249, 0.5)",
+        "rgba(255,  85,  85, 0.5)",
+        "rgba(241, 250, 140, 0.5)",
+        "rgba(139, 233, 253, 0.5)",
+        "rgba( 80, 250, 123, 0.5)",
+        "rgba(255, 184, 108, 0.5)",
+        "rgba(255, 121, 198, 0.5)",
+        "rgba(189, 147, 249, 0.5)",
+        "rgba(255,  85,  85, 0.5)",
+        "rgba(241, 250, 140, 0.5)",
+        "rgba(139, 233, 253, 0.5)",
+        "rgba( 80, 250, 123, 0.5)",
+        "rgba(255, 184, 108, 0.5)",
+        "rgba(255, 121, 198, 0.5)",
+        "rgba(189, 147, 249, 0.5)",
+        "rgba(255,  85,  85, 0.5)",
+        "rgba(241, 250, 140, 0.5)"
+
+        ],
+    // The indent color if the number of spaces is not a multiple of "tabSize".
+    // "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
+    "indentRainbow.errorColor": "rgba(98, 114, 164, 0.1)",
+    // The indent color when there is a mix between spaces and tabs.
+    // To be disabled this coloring set this to an empty string.
+    // "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)",
+    "indentRainbow.tabmixColor": "rgba(128,32,32,0.1)",
+    "editor.tabSize": 2,
+    "SQL-Formatter-VSCode.functionCase": "upper",
+    "SQL-Formatter-VSCode.keywordCase": "upper",
+    "SQL-Formatter-VSCode.newlineBeforeSemicolon": true,
+    "SQL-Formatter-VSCode.dialect": "mysql",
+    "editor.wordWrap": "on",
+    "hediet.vscode-drawio.resizeImages": null,
+    "hediet.vscode-drawio.theme": "Kennedy",
+    //
+    // "ruby.lint": {
+    //     "rubocop": true
+    // },
+    // "[ruby]": {
+    //     "editor.formatOnSave": false
+    // },
+    // "ruby.format": "rubocop",
+    "todo-tree.general.tags": ["fixme", "note", "todo", "check"],
+    "todo-tree.highlights.defaultHighlight": {
+      "type": "text",
+      "gutterIcon": true
+    },
+    "todo-tree.highlights.customHighlight": {
+      "todo": {
+        "icon": "check-circle-fill",
+        "foreground": "orange",
+        "iconColour": "orange"
+      },
+      "fixme": {
+        "icon": "flame",
+        "foreground": "yellow",
+        "iconColour": "yellow"
+      },
+      "note": {
+        "icon": "paintbrush",
+        "foreground": "#00bfff",
+        "iconColour": "#00bfff"
+      },
+      "check": {
+        "icon": "plus-circle",
+        "foreground": "green",
+        "iconColour": "green"
+      },
+      "done": {
+        "type": "none",
+      },
+      "!": {
+        "type": "none",
+      }
+    },
+}
